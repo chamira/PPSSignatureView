@@ -357,6 +357,9 @@ static PPSSignaturePoint ViewPointToGL(CGPoint viewPoint, CGRect bounds, GLKVect
         addVertex(&length, previousVertex);
     }
     
+    //Chamira Fernando, bring down thinkness
+    penThickness = penThickness - 0.0125;
+    
 	[self setNeedsDisplay];
 }
 
